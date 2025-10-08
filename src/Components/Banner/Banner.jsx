@@ -25,6 +25,29 @@ const Banner = () => {
             <div className='flex justify-center mt-10'>
                 <img src={iPhoneImg} alt="" />
             </div>
+            <div className='bg-gradient-to-br from-[#632EE3] to-[#9F62F2] '>
+                <h1 className='text-center font-bold py-10 text-4xl text-white'>Trusted by Millions, Built for You</h1>
+                <div className='flex justify-around items-center'>
+                    <div className='text-white pb-10 flex flex-col items-center justify-center'>
+                        <p className='text-xl'><small>Total Downloads</small></p>
+                        <h1 className='text-6xl font-bold'>29.6M</h1>
+                        <p className='text-xl '><small>21% more than last month</small></p>
+                    </div>
+
+                    <div className='text-white pb-10 flex flex-col items-center justify-center'>
+                        <p className='text-xl'><small>Total Downloads</small></p>
+                        <h1 className='text-6xl font-bold'>29.6M</h1>
+                        <p className='text-xl '><small>21% more than last month</small></p>
+                    </div>
+
+                    <div className='text-white pb-10 flex flex-col items-center justify-center'>
+                        <p className='text-xl'><small>Total Downloads</small></p>
+                        <h1 className='text-6xl font-bold'>29.6M</h1>
+                        <p className='text-xl '><small>21% more than last month</small></p>
+                    </div>
+                </div>
+            
+            </div>
         </div>
     )
 };
