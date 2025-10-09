@@ -1,0 +1,52 @@
+import React, { use } from "react";
+import shakibimg from "../../assets/Shakib.jpg";
+import starImg from "../../assets/starImg.png";
+import downloadIconImg from "../../assets/downloadIcon.png";
+import { useNavigate } from "react-router";
+
+const Card = ({ cardsDataPromise }) => {
+  const singleCard = use(cardsDataPromise);
+  const navigate = useNavigate();
+
+  return (
+    <div>
+      <h1 className="font-bold mt-8 text-4xl text-center">Trending Apps</h1>
+      <p className="text-lg mt-2 mb-6 text-[#627382] text-center">
+        Explore All Trending Apps on the Market developed by us
+      </p>
+
+      <div className="grid grid-cols-4 gap-4">
+        {singleCard.map((card) => (
+          <div key={card.id}>
+            <div className="card bg-base-100 shadow-sm p-2">
+              <figure>
+                <img src={shakibimg} alt="Shoes" />
+              </figure>
+              <div className="card-body">
+                <p>{card.description}</p>
+                <div className="card-actions justify-between mt-2">
+                  <div className="badge badge-outline">
+                    <img src={downloadIconImg} alt="" />
+                    <p>{card.downloads}</p>
+                  </div>
+                  <div className="badge badge-outline">
+                    <img src={starImg} alt="" />
+                    <p>{card.ratingAvg}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+      <div className="flex justify-center mt-9 mb-6">
+        <button onClick={() => navigate("/app")}
+         className="btn bg-gradient-to-tr from-[#632EE3] to-[#9F62F2] px-8 text-white">
+          Show All
+        </button>
+      </div>
+    </div>
+  );
+};
+
+export default Card;

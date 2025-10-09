@@ -2,6 +2,7 @@ import React from 'react';
 import playStoreImg from '../../assets/playStoreImg.png'
 import appStoreImg from '../../assets/appStoreImg.png'
 import iPhoneImg from '../../assets/Iphone.png'
+import Cards from '../Cards/Cards';
 
 
 const Banner = () => {
@@ -49,6 +50,8 @@ const Banner = () => {
             
             </div>
         </div>
+
+      
     )
 };
 
