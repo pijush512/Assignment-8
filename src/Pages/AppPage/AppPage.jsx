@@ -10,7 +10,7 @@ const AppPage = () => {
             <h1 className='font-bold text-4xl text-center mt-10 '>Our All Applications</h1>
             <p className='text-lg mt-2 mb-6 text-[#627382] text-center'>Explore All Apps on the Market developed by us. We code for Millions</p>
             
-            <Suspense fallback={<p>Loading...</p>}>
+            <Suspense fallback={<span className="loading loading-bars loading-lg"></span>}>
                 <AllAppCard allAppDataPromise={allAppDataPromise}></AllAppCard>
             </Suspense>
 

@@ -1,146 +1,90 @@
 [
   {
-    "image": "https://i.imgur.com/xyz1.png",
-    "title": "ChatMaster AI",
-    "companyName": "NeuraSoft Ltd.",
     "id": 1,
-    "description": "An AI chatbot that helps with daily tasks, learning, and entertainment.",
+    "title": "ChatMaster",
+    "companyName": "NeuraSoft",
+    "description": "AI chatbot for daily tasks.",
     "size": 45,
     "reviews": 12500,
     "ratingAvg": 4.6,
-    "downloads": 5000000,
-    "ratings": [
-      { "name": "1 star", "count": 320 },
-      { "name": "2 star", "count": 540 },
-      { "name": "3 star", "count": 2100 },
-      { "name": "4 star", "count": 3800 },
-      { "name": "5 star", "count": 8740 }
-    ]
+    "downloads": "5M",
+    "image": "https://i.imgur.com/xyz1.png"
   },
   {
-    "image": "https://i.imgur.com/xyz2.png",
-    "title": "SnapWave",
-    "companyName": "PixelForge Inc.",
     "id": 2,
-    "description": "Capture and edit your moments with professional photo filters.",
+    "title": "SnapWave",
+    "companyName": "PixelForge",
+    "description": "Photo editing with filters.",
     "size": 80,
     "reviews": 18000,
     "ratingAvg": 4.2,
-    "downloads": 8000000,
-    "ratings": [
-      { "name": "1 star", "count": 900 },
-      { "name": "2 star", "count": 1200 },
-      { "name": "3 star", "count": 4000 },
-      { "name": "4 star", "count": 6200 },
-      { "name": "5 star", "count": 5700 }
-    ]
+    "downloads": "8M",
+    "image": "https://i.imgur.com/xyz2.png"
   },
   {
-    "image": "https://i.imgur.com/xyz3.png",
-    "title": "FitTrack",
-    "companyName": "Healthify Systems",
     "id": 3,
-    "description": "Monitor your health, workouts, and daily steps easily.",
+    "title": "FitTrack",
+    "companyName": "Healthify",
+    "description": "Track workouts and health.",
     "size": 52,
     "reviews": 9800,
     "ratingAvg": 4.5,
-    "downloads": 3000000,
-    "ratings": [
-      { "name": "1 star", "count": 200 },
-      { "name": "2 star", "count": 400 },
-      { "name": "3 star", "count": 1600 },
-      { "name": "4 star", "count": 3100 },
-      { "name": "5 star", "count": 4500 }
-    ]
+    "downloads": "3M",
+    "image": "https://i.imgur.com/xyz3.png"
   },
   {
-    "image": "https://i.imgur.com/xyz4.png",
+    "id": 4,
     "title": "TuneVibe",
     "companyName": "MelodyWorks",
-    "id": 4,
-    "description": "Listen to millions of songs, podcasts, and live radio stations.",
+    "description": "Listen songs & podcasts.",
     "size": 120,
     "reviews": 24500,
     "ratingAvg": 4.7,
-    "downloads": 12000000,
-    "ratings": [
-      { "name": "1 star", "count": 800 },
-      { "name": "2 star", "count": 900 },
-      { "name": "3 star", "count": 2500 },
-      { "name": "4 star", "count": 5600 },
-      { "name": "5 star", "count": 14600 }
-    ]
+    "downloads": "12M",
+    "image": "https://i.imgur.com/xyz4.png"
   },
   {
-    "image": "https://i.imgur.com/xyz5.png",
+    "id": 5,
     "title": "QuickLearn",
     "companyName": "EduSpark",
-    "id": 5,
-    "description": "Online learning platform offering thousands of interactive courses.",
+    "description": "Interactive online courses.",
     "size": 95,
     "reviews": 15400,
     "ratingAvg": 4.3,
-    "downloads": 9000000,
-    "ratings": [
-      { "name": "1 star", "count": 500 },
-      { "name": "2 star", "count": 1200 },
-      { "name": "3 star", "count": 3000 },
-      { "name": "4 star", "count": 4800 },
-      { "name": "5 star", "count": 5900 }
-    ]
+    "downloads": "9M",
+    "image": "https://i.imgur.com/xyz5.png"
   },
   {
-    "image": "https://i.imgur.com/xyz6.png",
+    "id": 6,
     "title": "ShopZone",
     "companyName": "EcomWorld",
-    "id": 6,
-    "description": "Online shopping made easier with fast delivery and great deals.",
+    "description": "Fast online shopping.",
     "size": 68,
     "reviews": 30000,
     "ratingAvg": 4.4,
-    "downloads": 20000000,
-    "ratings": [
-      { "name": "1 star", "count": 900 },
-      { "name": "2 star", "count": 1300 },
-      { "name": "3 star", "count": 5400 },
-      { "name": "4 star", "count": 7800 },
-      { "name": "5 star", "count": 14500 }
-    ]
+    "downloads": "20M",
+    "image": "https://i.imgur.com/xyz6.png"
   },
   {
-    "image": "https://i.imgur.com/xyz7.png",
-    "title": "GameHub",
-    "companyName": "PlayVerse Studios",
     "id": 7,
-    "description": "Discover trending mobile games and connect with other players.",
+    "title": "GameHub",
+    "companyName": "PlayVerse",
+    "description": "Discover trending games.",
     "size": 110,
     "reviews": 21000,
     "ratingAvg": 4.1,
-    "downloads": 7000000,
-    "ratings": [
-      { "name": "1 star", "count": 1000 },
-      { "name": "2 star", "count": 1800 },
-      { "name": "3 star", "count": 4000 },
-      { "name": "4 star", "count": 6500 },
-      { "name": "5 star", "count": 6700 }
-    ]
+    "downloads": "7M",
+    "image": "https://i.imgur.com/xyz7.png"
   },
   {
-    "image": "https://i.imgur.com/xyz8.png",
+    "id": 8,
     "title": "NoteEase",
     "companyName": "SmartTools",
-    "id": 8,
-    "description": "Create, edit, and organize notes with cloud backup.",
+    "description": "Organize notes with cloud.",
     "size": 30,
     "reviews": 8700,
     "ratingAvg": 4.5,
-    "downloads": 2500000,
-    "ratings": [
-      { "name": "1 star", "count": 200 },
-      { "name": "2 star", "count": 400 },
-      { "name": "3 star", "count": 1500 },
-      { "name": "4 star", "count": 2500 },
-      { "name": "5 star", "count": 4100 }
-    ]
+    "downloads": "2.5M",
+    "image": "https://i.imgur.com/xyz8.png"
   }
 ]

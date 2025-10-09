@@ -15,7 +15,7 @@ const Card = ({ cardsDataPromise }) => {
         Explore All Trending Apps on the Market developed by us
       </p>
 
-      <div className="grid grid-cols-4 gap-4">
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
         {singleCard.map((card) => (
           <div key={card.id}>
             <div className="card bg-base-100 shadow-sm p-2">
@@ -23,15 +23,15 @@ const Card = ({ cardsDataPromise }) => {
                 <img src={shakibimg} alt="Shoes" />
               </figure>
               <div className="card-body">
-                <p>{card.description}</p>
+                <p className="font-semibold">{card.description}</p>
                 <div className="card-actions justify-between mt-2">
-                  <div className="badge badge-outline">
+                  <div className="badge bg-[#F1F5E8]">
                     <img src={downloadIconImg} alt="" />
-                    <p>{card.downloads}</p>
+                    <p className="text-[#00D390]">{card.downloads}</p>
                   </div>
-                  <div className="badge badge-outline">
+                  <div className="badge bg-[#FFF0E1]">
                     <img src={starImg} alt="" />
-                    <p>{card.ratingAvg}</p>
+                    <p className="text-[#FF8811]">{card.ratingAvg}</p>
                   </div>
                 </div>
               </div>
@@ -40,8 +40,10 @@ const Card = ({ cardsDataPromise }) => {
         ))}
       </div>
       <div className="flex justify-center mt-9 mb-6">
-        <button onClick={() => navigate("/app")}
-         className="btn bg-gradient-to-tr from-[#632EE3] to-[#9F62F2] px-8 text-white">
+        <button
+          onClick={() => navigate("/app")}
+          className="btn bg-gradient-to-tr from-[#632EE3] to-[#9F62F2] px-8 text-white"
+        >
           Show All
         </button>
       </div>

@@ -9,7 +9,7 @@ const Cards = () => {
     return (
         
         <div>
-            <Suspense fallback={<p>Looading...</p>}>
+            <Suspense fallback={<span className="loading loading-bars loading-lg"></span>}>
                 <Card cardsDataPromise={cardsDataPromise}></Card>
             </Suspense>
         </div>

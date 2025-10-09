@@ -38,15 +38,15 @@ const Navbar = () => {
             tabIndex={0}
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
           >
-            <li>
-              <a>Item 1</a>
-            </li>
-              <li>
-                <a>Item 2</a>
-              </li>
-            <li>
-              <a>Item 3</a>
-            </li>
+            <NavLink to='/' className={({isActive}) => navActiveStatus(isActive) }><li>
+                <a>Home</a>
+            </li></NavLink>
+          <NavLink to='/app' className={({isActive}) => navActiveStatus(isActive) }><li>
+                <a>App</a>
+            </li></NavLink>
+          <NavLink to='/installation' className={({isActive}) => navActiveStatus(isActive) }><li>
+                <a>Installation</a>
+            </li></NavLink>
           </ul>
         </div>
         <Link to='/'>
