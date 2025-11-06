@@ -1,13 +1,29 @@
-import './App.css'
+// import './App.css'
 
-function App() {
-  
+// function App() {
 
+
+//   return (
+//     <>
+
+//     </>
+//   )
+// }
+
+// export default App
+
+
+import React from "react";
+import AllAppCard from "../../Components/Cards/AllAppCard/AllAppCard";
+import appsData from "../../data/CardsData.json";
+
+const AppPage = () => {
   return (
-    <>
-      <h1 className='text-4xl'>hello</h1>
-    </>
-  )
-}
+    <div>
+      <AllAppCard allAppDataPromise={Promise.resolve(appsData)} />
+    </div>
+  );
+};
 
-export default App
+export default AppPage;
+

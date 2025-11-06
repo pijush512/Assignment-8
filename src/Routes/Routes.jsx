@@ -6,6 +6,8 @@ import Home from '../Pages/Home/Home';
 import AppPage from '../Pages/AppPage/AppPage';
 import InstallationPage from '../Pages/InstallationPage/InstallationPage';
 import AllAppCard from '../Components/Cards/AllAppCard/AllAppCard';
+import PageDetails from '../Pages/AppDetails/AppDetails';
+import AppDetails from '../Pages/AppDetails/AppDetails';
 
 
 export const router = createBrowserRouter([
@@ -14,23 +16,27 @@ export const router = createBrowserRouter([
     Component: Root,
     errorElement: <ErrorPage></ErrorPage>,
     children: [
-        {
-            index: true,
-            path: '/',
-            Component: Home,
-        },
-        {
-            path: 'app/',
-            Component: AppPage,
-        },
-        {
-            path: '/installation',
-            Component: InstallationPage
-        },
-        {
-          path: '/app',
-          Component: AllAppCard,
-        }
+      {
+        index: true,
+        Component: Home,
+      },
+      {
+        path: 'app',
+        Component: AppPage,
+      },
+      {
+        path: 'app/:id',
+        Component: AppDetails,
+      },
+      {
+        path: '/installation',
+        Component: InstallationPage
+      },
+      // {
+      //   path: '/app',
+      //   Component: AllAppCard,
+      // },
+
     ]
   },
 ]);

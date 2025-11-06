@@ -1,8 +1,7 @@
 import React, { use } from "react";
-import shakibimg from "../../assets/Shakib.jpg";
 import starImg from "../../assets/starImg.png";
 import downloadIconImg from "../../assets/downloadIcon.png";
-import { useNavigate } from "react-router";
+import { Link, useNavigate } from "react-router-dom";
 
 const Card = ({ cardsDataPromise }) => {
   const singleCard = use(cardsDataPromise);
@@ -17,10 +16,13 @@ const Card = ({ cardsDataPromise }) => {
 
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
         {singleCard.map((card) => (
-          <div key={card.id}>
+          <div key={card.id}
+            onClick={() => navigate(`/app/${card.id}`)}
+            className="cursor-pointer"
+          >
             <div className="card bg-base-100 shadow-sm p-2">
-              <figure>
-                <img src={shakibimg} alt="Shoes" />
+              <figure className="h-40">
+                <img src={card.image} alt="Shoes" />
               </figure>
               <div className="card-body">
                 <p className="font-semibold">{card.description}</p>
@@ -37,8 +39,12 @@ const Card = ({ cardsDataPromise }) => {
               </div>
             </div>
           </div>
+
+
         ))}
       </div>
+
+
       <div className="flex justify-center mt-9 mb-6">
         <button
           onClick={() => navigate("/app")}
@@ -47,7 +53,7 @@ const Card = ({ cardsDataPromise }) => {
           Show All
         </button>
       </div>
-    </div>
+    </div >
   );
 };
 

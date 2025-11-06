@@ -1,3 +1,17 @@
+# My Trending Apps
+
+## Description
+This React + Vite app shows trending apps and allows searching apps dynamically.
+
+## Technologies Used
+- React
+- React Router
+- Tailwind CSS
+- JavaScript
+- HTML & CSS
+
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.

@@ -1,12 +1,14 @@
 import React, { use, useState } from "react";
-import shakibimg from "../../../assets/Shakib.jpg";
 import starImg from "../../../assets/starImg.png";
 import downloadIconImg from "../../../assets/downloadIcon.png";
+import { useNavigate } from "react-router-dom";
 
 const AllAppCard = ({ allAppDataPromise }) => {
   const appCards = use(allAppDataPromise);
+  const navigate = useNavigate();
 
   const [search, setSearch] = useState("");
+
   const filterAppsCard = appCards.filter(
     (app) => app.description.toLowerCase().includes(search.toLowerCase())
   );
@@ -26,13 +28,15 @@ const AllAppCard = ({ allAppDataPromise }) => {
           />
         </div>
       </div>
-
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
         {filterAppsCard.map((appCard) => (
-          <div key={appCard.id}>
+          <div key={appCard.id}
+            onClick={() => navigate(`/app/${appCard.id}`, { state: { allAppData: appCards } })}
+            className="cursor-pointer"
+          >
             <div className="card bg-base-100 shadow-sm p-2">
-              <figure>
-                <img src={shakibimg} alt="Shoes" />
+              <figure className="h-40">
+                <img src={appCard.image} alt="Shoes" />
               </figure>
               <div className="card-body">
                 <p className="font-semibold">{appCard.description}</p>
