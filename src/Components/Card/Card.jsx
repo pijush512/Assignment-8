@@ -3,12 +3,9 @@ import starImg from "../../assets/starImg.png";
 import downloadIconImg from "../../assets/downloadIcon.png";
 import { useNavigate } from "react-router-dom";
 
-
 const Card = ({ cardsDataPromise }) => {
   const singleCard = use(cardsDataPromise);
   const navigate = useNavigate();
-
-
 
   return (
     <div>
@@ -20,7 +17,6 @@ const Card = ({ cardsDataPromise }) => {
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
         {singleCard.map((card) => (
           <div key={card.id}
-            // onClick={() => navigate(`/app/${card.id}`)}
             onClick={() => navigate(`/app/${card.id}`, { state: { allAppData: singleCard } })}
             className="cursor-pointer"
           >
@@ -47,8 +43,6 @@ const Card = ({ cardsDataPromise }) => {
 
         ))}
       </div>
-
-
       <div className="flex justify-center mt-9 mb-6">
         <button
           onClick={() => navigate("/app")}
