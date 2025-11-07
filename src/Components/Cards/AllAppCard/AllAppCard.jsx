@@ -31,6 +31,7 @@ const AllAppCard = ({ allAppDataPromise }) => {
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
         {filterAppsCard.map((appCard) => (
           <div key={appCard.id}
+
             onClick={() => navigate(`/app/${appCard.id}`, { state: { allAppData: appCards } })}
             className="cursor-pointer"
           >
@@ -55,8 +56,11 @@ const AllAppCard = ({ allAppDataPromise }) => {
           </div>
         ))}
       </div>
-    </div>
+    </div >
   );
 };
 
 export default AllAppCard;
+
+
+

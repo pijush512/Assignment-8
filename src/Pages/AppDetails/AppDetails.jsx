@@ -4,13 +4,14 @@ import { useLocation, useParams } from 'react-router';
 const AppDetails = () => {
   const location = useLocation();
   const { id } = useParams();
-  const allAppData = location.state?.allAppData || [];
+  const allCards = location.state?.allAppData || [];
+  // const allCards = location.state?.allCards || [];
   const [app, setApp] = useState(null);
 
   useEffect(() => {
-    const selectedApp = allAppData.find(item => item.id === parseInt(id));
+    const selectedApp = allCards.find(item => item.id === parseInt(id));
     setApp(selectedApp);
-  }, [id, allAppData]);
+  }, [id, allCards]);
 
   if (!app) {
     return <p className="text-center mt-10">Loading...</p>;
@@ -37,3 +38,8 @@ const AppDetails = () => {
 };
 
 export default AppDetails;
+
+
+
+
+
