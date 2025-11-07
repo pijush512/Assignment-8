@@ -40,7 +40,7 @@ const AllAppCard = ({ allAppDataPromise }) => {
                 <img src={appCard.image} alt="Shoes" />
               </figure>
               <div className="card-body">
-                <p className="font-semibold">{appCard.description}</p>
+                <p className="font-semibold">{appCard.title}</p>
                 <div className="card-actions justify-between mt-2">
                   <div className="badge bg-[#F1F5E8]">
                     <img src={downloadIconImg} alt="" />

@@ -29,7 +29,7 @@ const Card = ({ cardsDataPromise }) => {
                 <img src={card.image} alt="Shoes" />
               </figure>
               <div className="card-body">
-                <p className="font-semibold">{card.description}</p>
+                <p className="font-semibold">{card.title}</p>
                 <div className="card-actions justify-between mt-2">
                   <div className="badge bg-[#F1F5E8]">
                     <img src={downloadIconImg} alt="" />
